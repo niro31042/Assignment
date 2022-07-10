@@ -32,6 +32,12 @@ public class Cointoss {
             }
         }
         System.out.println("Heads: " + headNum + ", Tails: " + tailNum);
+
+        if (headNum > tailNum) {
+            System.out.println("You won");
+        } else {
+            System.out.println("You lost");
+        }
     }
 
     public static void main(String[] args) {
