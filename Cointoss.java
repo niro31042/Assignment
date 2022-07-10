@@ -1,4 +1,5 @@
 import java.util.Random;
+import java.util.Scanner;
 
 public class Cointoss {
     private static final int gamelimit = 3;
@@ -8,6 +9,14 @@ public class Cointoss {
     public Cointoss() {
         headNum = 0;
         tailNum = 0;
+
+        System.out.println("Who are you?");
+        Scanner sc = new Scanner(System.in);
+        System.out.print("> ");
+        String name = sc.next();
+        System.out.println("Hello, " + name + "!");
+        System.out.println();
+        sc.close();
 
         Random random = new Random();
 
